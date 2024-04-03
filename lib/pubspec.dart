@@ -15,7 +15,7 @@ description: A new Flutter project.
 ${version != null ? "version: $version" : lastAndroidVersionString}
 
 environment:
-  sdk: '>=3.2.3 <4.0.0'
+  sdk: '>=3.0.5 <4.0.0'
 
 dependencies:
   flutter:
@@ -117,7 +117,7 @@ dependencies:
   rxdart: ^0.27.0
   flutter_app_badger: ^1.5.0
   app_tracking_transparency: ^2.0.4
-  google_mobile_ads: ^5.0.0
+  google_mobile_ads: ^3.0.0
   flutter_math_fork: ^0.7.1
   mailto: ^2.0.0
   # flutter_inappwebview: ^5.7.2+3
@@ -131,7 +131,6 @@ dependencies:
   
 dependency_overrides:
   flutter_svg: ^2.0.7
-  meta: ^1.10.0
   recaptcha_enterprise_flutter: ^18.4.2
 
 dev_dependencies:
