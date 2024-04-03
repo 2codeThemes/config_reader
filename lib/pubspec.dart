@@ -117,7 +117,7 @@ dependencies:
   rxdart: ^0.27.0
   flutter_app_badger: ^1.5.0
   app_tracking_transparency: ^2.0.4
-  google_mobile_ads: ^3.0.0
+  google_mobile_ads: ^5.0.0
   flutter_math_fork: ^0.7.1
   mailto: ^2.0.0
   # flutter_inappwebview: ^5.7.2+3
