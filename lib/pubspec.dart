@@ -36,7 +36,7 @@ dependencies:
   flutter_advanced_networkimage_2: ^2.0.1
   bloc: ^7.0.0
   flutter_bloc: ^7.2.0
-  assets_audio_player: ^3.0.6
+  assets_audio_player: ^3.1.1
   dartz: ^0.10.1
   freezed_annotation: ^2.4.1
   flutter_funding_choices: ^1.0.0+1
@@ -74,7 +74,7 @@ dependencies:
   flutter_staggered_grid_view: ^0.4.0
   flash: ^3.0.5+2
   flutter_share: ^2.0.0
-  in_app_review: ^2.0.6
+#  in_app_review: ^2.0.6
   flare_flutter: ^3.0.2
   implicitly_animated_reorderable_list_2: ^0.5.1
   html: ^0.15.4
@@ -91,7 +91,7 @@ dependencies:
   flutter_sticky_header: ^0.6.5
   flutter_hooks: ^0.20.0
   google_fonts: ^4.0.0
-  launch_review: ^3.0.1
+  launch_app_store: ^1.0.2
   flutter_facebook_auth: ^5.0.0
   google_sign_in: ^6.1.4
   video_player: ^2.7.0
