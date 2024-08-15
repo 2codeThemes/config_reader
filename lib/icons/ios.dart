@@ -136,6 +136,7 @@ Future<void> changeIosLauncherIcon(String iconName, String flavor) async {
 }
 
 Future<void> changeIOSPackageName(String packgeName) async {
+  print('bundle when changing pbxproj $packgeName');
   final File iOSConfigFile = File("ios/Runner.xcodeproj/project.pbxproj");
   final List<String> lines = await iOSConfigFile.readAsLines();
   for (var i = 0; i < lines.length; i++) {

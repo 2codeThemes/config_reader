@@ -53,6 +53,7 @@ Future<void> init({
   final appName = tryString(config.getMap('meta')?.getMap('app')?.get('appName'), staticConfig.get('appName'));
   final appBundleAndroid = staticConfig.get('appIdAndroid');
   final appBundleIOS = staticConfig.get('appIdIOS');
+  print('bundle from static config $appBundleIOS');
   final baseUrl =
       config.getMap('meta')?.get('baseUrl') ?? staticConfig.get('serviceUrl') ?? staticConfig.get('baseUrl');
 
