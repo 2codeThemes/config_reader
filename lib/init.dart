@@ -155,7 +155,6 @@ Future<void> init({
   await flutterLauncherIcons();
   await flutterLauncherName(appName);
   await flutterNativeSplash(splashColor);
-  await changeIOSPackageName(appBundleIOS);
 
   final clean = 'flutter clean';
   final pubGet = 'flutter pub get';
@@ -171,6 +170,8 @@ Future<void> init({
   await shell.run(splash);
   await shell.run(icons);
   await shell.run(name);
+
+  await changeIOSPackageName(appBundleIOS);
 
   if (addToGit) {
     await commentGitIgnore();
