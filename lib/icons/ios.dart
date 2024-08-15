@@ -142,6 +142,11 @@ Future<void> changeIOSPackageName(String packgeName) async {
     if (lines[i].contains("PRODUCT_BUNDLE_IDENTIFIER")) {
       lines[i] = '				PRODUCT_BUNDLE_IDENTIFIER = $packgeName;';
     }
+    if (lines[i].contains("PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]")) {
+      lines[i] = '				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "$packgeName AppStore";';
+    } else if (lines[i].contains("PROVISIONING_PROFILE_SPECIFIER")) {
+      lines[i] = '				PROVISIONING_PROFILE_SPECIFIER = "$packgeName AppStore";';
+    }
   }
   await iOSConfigFile.writeAsString(lines.join("\n"));
 }
